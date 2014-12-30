@@ -107,7 +107,10 @@ if __name__ == '__main__':
         sort_files=[]
         for i in xrange(k):
             sort_files.append(temp['files'][id_sort[i]])
-        
+        print "\n"
+        for i in xrange(k):
+            print "%03d dis: %.3f %s"%(sort_ids[i],sort_d[i],sort_files[i])
+            
 #display        
 #        plt.figure(2) 
 #        plt.cla()
