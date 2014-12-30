@@ -108,17 +108,16 @@ if __name__ == '__main__':
         for i in xrange(k):
             sort_files.append(temp['files'][id_sort[i]])
         
-#display        
-#        plt.figure(2) 
-#        plt.cla()
-#        for i in xrange(k):
-#            print "%03d dis: %.3f %s"%(sort_ids[i],sort_d[i],sort_files[i])
-#            plt.subplot(2,5,i+1)
-#            plt.title("%03d dis: %.3f"%(sort_ids[i],sort_d[i]),fontsize=10)
-#            plt.xlabel('%s'%sort_files[i])            
-#            im_icon=np.array(Image.open(sort_files[i]).convert('L'))
-#            plt.imshow(im_icon)
-#            plt.axis('off')
-#        plt.set_cmap('gray')    
-#        plt.show()        
-#        plt.ginput(1)
+        plt.figure(2) 
+        plt.cla()
+        for i in xrange(k):
+            print "%03d dis: %.3f %s"%(sort_ids[i],sort_d[i],sort_files[i])
+            plt.subplot(2,5,i+1)
+            plt.title("%03d dis: %.3f"%(sort_ids[i],sort_d[i]),fontsize=10)
+            plt.xlabel('%s'%sort_files[i])            
+            im_icon=np.array(Image.open(sort_files[i]).convert('L'))
+            plt.imshow(im_icon)
+            plt.axis('off')
+        plt.set_cmap('gray')    
+        plt.show()        
+        plt.ginput(1)
