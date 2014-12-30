@@ -54,4 +54,5 @@ docs/_build/
 target/
 
 #IS
-main/dataset
+main/dataset/
+main/query/
